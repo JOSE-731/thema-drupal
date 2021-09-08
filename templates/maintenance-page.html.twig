@@ -1,0 +1,55 @@
+{#
+/**
+ * @file
+ * Theme override to display a single Drupal page while offline.
+ *
+ * All available variables are mirrored in page.html.twig.
+ * Some may be blank but they are provided for consistency.
+ *
+ * @see template_preprocess_maintenance_page()
+ */
+#}
+<!-- {{ attach_library('maintenance_mode/maintenance_mode.setting') }} -->
+<!-- {% set path = '@maintenance_mode/templates/maintenance_mode_contact_form.twig' %} -->
+
+{% set base_url = url('<front>') %}
+
+  <!-- coming-soon -->
+ {% if bg_image_url1|render is not empty %}
+   <section id="comming-soon" class="banner" style="background-image:url('{{ bg_image_url1 }}')">
+  {% else %}  
+    <section id="comming-soon" class="banner" style="background-image:url({{ base_url }}themes/yg_startup/assets/images/pp.png)">
+  {% endif %} 
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mx-auto">
+          <div class="cs-overlay text-center">
+            <h1 class="title">{{ maintance_mode_title }}</h1>
+            <div id="counter">
+              <div>
+                <span class="days"></span>
+                <p>Days</p>
+              </div>
+              <div>
+                <span class="hours"></span>
+                <p>Hours</p>
+              </div>
+              <div>
+                <span class="minutes"></span>
+                <p>Minutes</p>
+              </div>
+              <div>
+                <span class="seconds"></span>
+                <p>Seconds</p>
+              </div>
+            </div>
+            <p class="text-center">{{ maintance_mode_description }}</p>
+              <div class="comming-soon-btn text-center">
+              <a href="{{ redirect_url }}" class="custom-btn">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- coming-soon-end -->

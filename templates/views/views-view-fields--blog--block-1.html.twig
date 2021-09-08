@@ -1,0 +1,12 @@
+    <div class="blog-list-item">
+      <a href="{{fields.view_node.content}}"><img src="{{fields.field_image.content}}" class="img-fluid" title="blog" alt="blog"></a>
+      <div class="blog-caption">
+        <a href="{{fields.view_node.content}}"><h3>{{fields.title.content}}</h3></a>
+        <ul>
+          <li><span><i class="fa fa-user"></i>By {{fields.uid.content}}</span></li>
+          <li><span><i class="fa fa-calendar-o"></i>{{fields.created.content}}</span></li>
+        </ul>
+        <p>{{fields.body.content}}</p>
+        <a href="{{fields.view_node.content}}" class="link">Read More</a>
+      </div>
+    </div>

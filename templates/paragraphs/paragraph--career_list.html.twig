@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-7 col-lg-6 col-sm-12 col-xs-12">
+    <div class="careers-item">
+      <h3>{{content.field_title.0}}</h3>
+      <p><i class="fa fa-map-marker"></i><span>{{content.field_address.0}}</span></p>
+    </div>
+  </div>
+  <div class="col-md-2 col-lg-3 col-sm-12 col-xs-12 salary text-center">
+    <b>{{content.field_counter_value.0}}</b>
+  </div>
+  <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 apply-btn text-center">
+    <a href="{{ content.field_button[0]['#url']|render }}" class="custom-btn">{{ content.field_button[0]['#title']|render }}</a>
+  </div>
+</div>

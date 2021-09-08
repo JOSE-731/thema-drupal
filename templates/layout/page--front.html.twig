@@ -1,0 +1,136 @@
+	<!-- Topbar -->
+  {% if header_variation == 'header2' %}
+  <section id="topbar" class="header2">
+    <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6 col-xs-12"></div>
+          <div class="col-lg-6 col-sm-6 col-xs-12 social">
+            <ul>
+              <li><a href="/user/login"><i class="fa fa-user"></i> Login</a></li>
+              <li><a href="{{facebook}}"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+              <li><a href="{{twitter}}"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="{{pinterest}}"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div> <!-- Container End -->
+    </div>  
+    <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-5 col-xs-12">
+           {{page.logo}}
+          </div>
+          <div class="col-md-8 col-sm-7 col-xs-12 contact-info">
+            <div class="col-md-6 col-sm-6 col-xs-6 call-us">
+              <i class="fa fa-home" aria-hidden="true"></i>
+              <ul>
+                <li>Call Us</li>
+                <li><strong><a href="tel:{{phone_num}}">{{phone_num}}</a></strong></li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 mail-us">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <ul>
+                <li>Mail Us</li>
+                <li><strong><a href="mailto:{{email}}">{{email}}</a></strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> <!-- Container End -->
+    </div>
+    <header><!-- header -->
+      <nav id="menu" class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarYGStartup" aria-controls="navbarYGStartup" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+             {{page.primary_menu}}
+          </div>
+        </nav>
+    </header><!-- header End --> 
+  </section> 
+  {% endif %} 
+  {% if header_variation == 'header1' %}
+	<section id="topbar" class="header1">
+    <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-7 col-lg-9 contact-info">
+            <ul>
+              <li><i class="fa fa-home" aria-hidden="true"></i>{{header_address}}</li>
+              <li><a href="mailto:{{email}}"><i class="fas fa-envelope" aria-hidden="true"></i> {{email}}</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-3 social">
+            <ul>
+              <li><a href="{{facebook}}"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+              <li><a href="{{twitter}}"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="{{linkedin}}"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+              <li><a href="{{pinterest}}"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+              <li><a href="{{website}}"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div> <!-- end container -->
+    </div>  
+    <header><!-- header -->
+      <nav id="menu" class="navbar navbar-expand-lg">
+        <div class="container">
+          {{page.logo}}
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarYGStartup" aria-controls="navbarYGStartup" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+             {{page.primary_menu}}
+          </div>
+        </nav>
+    </header><!-- header End --> 
+  </section> 
+  {% endif %}
+  <!-- end topbar -->
+
+
+  <!--Start Slider Area-->
+      {{page.slider}}
+  <!-- Slider End-->
+
+  <!-- Content -->  
+  {{ page.content }} 
+  
+  <!-- call-to-action -->
+  <section id="call-to-action">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 col-md-8 wow fadeInLeft" data-wow-delay="0.2s">
+          <h3>{{action_title}}</h3>
+          <p>{{action_sub_title}}</p>
+        </div>
+        <div class="col-lg-3 col-md-4 wow fadeInRight" data-wow-delay="0.4s" >
+          <div class="call-to-action-btn"><a href="{{button_link}}" class="custom-btn">{{button_text}}inicio</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- call-to-action-end -->
+  <!-- footer start -->
+  <footer>
+    <div class="container">  
+    </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center copyright-text wow fadeInUp" data-wow-delay="0.2s"> 
+              <p> &copy;&nbsp;&nbsp;2021. <a href="#"> YG Startup</a>.&nbsp;&nbsp;<br></p><p class="our-info"> Come True by<a href="https://www.drupaldevelopersstudio.com/" target="_blank"> Comprised</a>,sas </p>   
+            </div> 
+          </div>
+        </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <!-- back to top button -->
+  <button class="scroll-top scroll-to-target" data-target="html">
+    <i class="fas fa-angle-up"></i>
+  </button>
+
+<!-- Bootstrap JS-->
+
+	

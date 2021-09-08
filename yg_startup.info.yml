@@ -1,0 +1,25 @@
+name: 'Cms-papajohns'
+description: 'Tema principal Cms-papajohns'
+core_version_requirement: ^8 || ^9
+type: theme
+base theme: classy
+screenshot: screenshot.png
+
+
+regions:
+  primary_menu: 'Menu'
+  logo: 'Logo'
+  highlighted: 'Highlighted'
+  title: 'Title'
+  content: 'Content'
+  slider: 'Slider'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'  
+  footer_1: 'Footer about'
+  footer_2: 'Footer Menu'
+  footer_3: 'Footer Blog'
+  copyright: 'Copyright'
+  
+
+libraries:
+  - yg_startup/global-styling

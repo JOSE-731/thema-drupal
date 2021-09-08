@@ -1,0 +1,17 @@
+<section id="vision-and-mission">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-6 mx-auto wow fadeInRight" data-wow-delay="0.2s">
+          <div class="vam-content">
+            <h2 class="title">{{content.field_title.0}}</h2>
+            {{content.field_body.0}}
+          </div>
+        </div>  
+        <div class="col-md-10 col-lg-6 mx-auto wow fadeInLeft" data-wow-delay="0.4s">
+          {{content.field_description.0}}
+          <a href="{{ content.field_button[0]['#url']|render }}" class="custom-btn">{{ content.field_button[0]['#title']|render }}</a>
+          <a href="{{ content.field_button_2[0]['#url']|render }}" class="custom-btn">{{ content.field_button_2[0]['#title']|render }}</a>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,22 @@
+<section id="slider" class="slider-area">
+  <div class="slider wow fadeInDown" data-wow-delay="0.6s">
+    {% for result in view.result %}
+      <div class="item" style="background-image:  url('{{ file_url(view.field.uri.value(view.result[loop.index-1])) }}')">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-10 text-center">
+              <div class="slide-caption">
+                <div class="slider-inner">
+                  <h1>{{ view.field.title.value(view.result[loop.index-1]) }}</h1>
+                  <p>{{ view.field.body.value(view.result[loop.index-1]) |striptags }}</p>
+                  <a class="custom-btn " href="{{ view.field.field_button_link.value(view.result[loop.index-1]) }}">{{ view.field.field_button_text.value(view.result[loop.index-1]) }}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>      

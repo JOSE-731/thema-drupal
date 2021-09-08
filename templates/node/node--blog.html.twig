@@ -1,0 +1,36 @@
+{% set createdDate = node.getCreatedTime|format_date('cus') %}
+{{content.field_banner.0}}
+<section id="blog" class="blog-details">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 col-md-12 co-sm-12 col-xs-12 mx-auto">
+            <div class="blog-box">
+              <div class="hovereffect">
+                <img src="{{content.field_image.0}}" class="img-fluid" title="blog-details-image" alt="blog-details-image">
+              </div>
+              <div class="blog-caption wow fadeInDown" data-wow-delay="0.5s">
+                <div class="blog-rf">
+                  <h3>{{ label }}</h3>
+                  <ul>
+                    <li><i class="fas fa-user"></i>{{ author_name}}</li>
+                    <li><i class="fas fa-calendar-alt"></i>{{ createdDate }}</li>
+                    <li><i class="fas fa-comments"></i>{{ comment_count }} Comments</li>
+                  </ul>
+                  {{content.body.0}}
+                </div> 
+              </div>
+              <!-- comment-list-->
+                <div class="row">
+                  <div class="col-lg-10 col-md-10 mx-auto wow fadeInLeft" data-wow-delay="0.7s">                  
+                    <div class="comment-row">
+                      <h3 class="secondary-title">Comments</h3>
+                    {{content.field_comments}}
+                    </div>
+                  </div>
+                </div> 
+                  <!-- comment-form-end --> 
+            </div>
+          </div>
+      </div>
+    </div>
+  </section> 

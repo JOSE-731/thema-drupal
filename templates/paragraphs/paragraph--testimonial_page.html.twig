@@ -1,0 +1,30 @@
+<div class="item">
+  <div class="testimonial-block mt-40">
+    <div class="inner-box">
+        <div class="row">
+      <div class="col-md-2">
+        <div class="image-outer">
+          
+          <div class="image">
+              <img src="{{ file_url(content.field_image['#items'].entity.uri.value) }}" alt="{{ content.field_candidates_image['#items'].alt }}" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10"> 
+      <div class="quote quote-left">
+              <i class="fa fa-quote-left" aria-hidden="true"></i>
+          </div>
+          
+        <div class="text">{{content.field_description.0}}</div>
+        <div class="quote quote-right">
+              <i class="fa fa-quote-right" aria-hidden="true"></i>
+          </div> 
+        <h3>{{content.field_title.0}}</h3>
+
+        <div class="location">{{content.field_facebook_url.0}}</div>
+
+    </div>
+    </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+ {%
+  set classes = [
+    'comment',
+    'js-comment',
+    status != 'published' ? 'comment--' ~ status,
+    comment.owner.anonymous ? 'by-anonymous',
+    author_id and author_id == commented_entity.getOwnerId() ? 'by-' ~ commented_entity.getEntityTypeId() ~ '-author',
+    'clearfix',
+  ]
+
+
+%}
+{% set createdDate = node.getCreatedTime|date('j F Y') %}
+{% if parent %}
+  <div class="comment-item middel-item">
+    {{user_picture}}
+    <h5>{{ author }}</h5>
+    <span>{{ created }}</span>
+     <p {{ content_attributes.addClass('comment__content') }}>
+                    {{ content }}
+                    </p>
+  </div>
+{% else %}
+  <div class="comment-item">
+    {{user_picture}}
+    <h5>{{ author }}</h5>
+    <span>{{ created }}</span>
+     <p {{ content_attributes.addClass('comment__content') }}>
+                    {{ content }}
+                    </p>
+  </div>
+{% endif %}

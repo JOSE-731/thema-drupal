@@ -1,0 +1,11 @@
+<section id="enquiry" class="banner" style="background-image:url({{ file_url(content.field_image['#items'].entity.uri.value) }})">
+    <div class="container">
+      <div class="row text-center wow fadeInDown" data-wow-delay="0.6s">
+        <div class="col-md-10 col-lg-9 col-sm-12 col-xs-12 mx-auto rcb-content">
+          <h2>{{content.field_title.0}}</h2>
+          {{content.field_body.0}}
+          <a href="{{ content.field_button[0]['#url']|render }}" class="custom-btn">{{ content.field_button[0]['#title']|render }}</a>
+        </div>
+      </div>  
+    </div>
+  </section>

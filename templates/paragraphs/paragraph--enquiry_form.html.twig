@@ -1,0 +1,19 @@
+<section id="enquiry" class="banner" style="background-image:url({{ file_url(content.field_image['#items'].entity.uri.value) }})">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-9 mx-auto text-center title-section wow fadeInUp" data-wow-delay="0.2s">
+          <h2 class="title">{{content.field_title.0}}</h2>
+          {{content.field_body.0}}
+        </div>  
+      </div>
+      <div class="row text-center wow fadeInDown" data-wow-delay="0.4s">
+        <!-- comment-form -->
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="contact-form wow fadeInRight" data-wow-delay="0.10s">
+              {{content.field_form.0}}
+            </div>
+          </div> 
+        <!-- comment-form-end --> 
+      </div>  
+    </div>
+  </section>

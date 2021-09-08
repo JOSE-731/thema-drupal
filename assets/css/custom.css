@@ -1,0 +1,521 @@
+.pricing .fontawesome-icons {
+    display: inline-block;
+}
+.comment-item h5 span a{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.comment-item h5{
+    font-size: 14px;
+    margin-bottom: 0px;
+    color: #333;
+}
+.blog-box article.contextual-region.profile {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.blog-details h3.secondary-title {
+    margin-bottom: 0px;
+}
+ul.inline, ul.links.inline {
+    display: block; 
+    padding-left: 0;
+    margin-top: 20px;
+}
+ul.inline, ul.links.inline {
+    display: block; 
+    padding-left: 0;
+    margin-top: 20px;
+}
+ul.links.inline li a {
+    font-size: 14px;
+    color: #333;
+}
+.blog-box #edit-submit ,.blog-box #edit-preview {
+    display: inline-block !important;
+    background-color: #007a53;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    font-weight: 400;
+    margin-right: 10px;
+    margin-top: 30px;
+    padding: 5px 36px;
+    font-size: 16px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    position: relative;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+#service-details li:before {
+    content: "\f0a4";
+    font-family: "Font Awesome 5 Free";
+    color: #333;
+    font-weight: bold;
+    top: -4px;
+    position: relative;    
+}
+#service-details .service-caption ul li span {
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 0px;
+    color: #333;
+    padding-left: 20px;
+}
+#vision-and-mission li:before {
+    content: "\f0a4";
+    font-family: "Font Awesome 5 Free";
+    color: #007a53;
+    font-weight: bold;
+    top: -4px;
+    position: relative;    
+}
+.style-one li:before {
+    content: "\f0a4";
+    font-family: "Font Awesome 5 Free";
+    color: #333;
+    font-weight: bold;
+    top: -4px;
+    position: relative;     
+}
+.style-two li:before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    color: #333;    
+    font-weight: bold;
+    top: -4px;
+    position: relative;
+}
+.style-one ul li span , .style-two ul li span {
+    overflow: hidden !important;
+    display: inline-block !important;
+    margin-top: 0px !important;
+    color: #333 !important;
+    padding-left: 10px !important;
+}
+#vision-and-mission ul li span {
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 0px;
+    color: #333;
+    padding-left: 20px;
+}
+.dropdown .fas {
+    font-size: 9px;
+    position: relative;
+    bottom: 0px;
+    left: 1px;
+}
+.pager__items > .is-active > a, .pager__items > li > a:hover, .pager__items > li > a:focus, .pager__items > li > span:hover, .pager__items > li > span:focus {
+    background: #007a53 none repeat scroll 0 0;
+    color: #fff !important;
+    text-decoration: none;
+}
+.pager__items > li > a, .pager__items > li > span {
+    font-size: 14px;
+    color: #3b3b3b;
+    font-weight: 700;
+    display: inline-block;
+    padding: 8px 15px;
+}
+.pager__items > li {
+    display: inline-block;
+    border: 1px solid #007a53;
+    padding: 0px;
+}
+.form-group {
+    margin-bottom: 10px !important;
+    margin-top: 0px !important; 
+}
+.contact-two-bg .contact-info p label {
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    color: #333;
+}
+.contact-two-bg .contact-info p span a {
+    display: table;
+    color: #444;
+    line-height: 25px;
+    overflow: hidden;
+}
+.contact-two-bg .contact-info i {
+    font-size: 16px;
+    color: #333;
+    margin-right: 7px;
+    display: inline-block;    
+    position: relative;
+    top: 24px;
+}
+.contact-two-bg .contact-info p {
+    padding-left: 30px;
+    width: 100%;
+}
+.custom-btn {
+    display: inline-block;
+    background-color: #007a53;
+    color: #ffffff !important;
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    margin-right: 10px;
+    margin-top: 30px;
+    padding: 15px 36px !important;
+    font-size: 16px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    position: relative;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+.login-form h3 {
+    color: #fff !important;
+    line-height: 1.2 !important;
+    padding-top: 10px !important;
+    font-size: 26px !important;
+    text-transform: uppercase !important;
+}
+.login #edit-submit {
+    font-weight: 600;
+    padding: 12px 29px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    background-color: #007a53;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    margin-right: 10px;
+    margin-top: 30px;
+    padding: 12px 32px;
+    font-size: 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    position: relative;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+    border: none;
+}
+.login #edit-submit:before {
+    position: absolute;
+    content: " ";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: rgba(255, 255, 255, 0.15);
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+.login #edit-submit:hover:before {
+    height: 100%;
+}
+h2#block-yg-startup-footer-menu{
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 30px;
+    padding-left: 0px;
+    margin-bottom: 45px;
+}
+#login label {
+    display: inline-block;
+    margin-bottom: 0rem !important;
+    color: #fff;
+}
+#login .form-composite > .fieldset-wrapper > .description, #login .form-item .description {
+    font-size: 12px;
+    color: #fff;
+}
+.testimonial-block {
+    position: relative;
+}
+.mt-40 {
+    margin-top: 40px !important;
+}
+.testimonial-block .inner-box {
+    position: relative;
+    text-align: center;
+}
+.testimonial-block .inner-box .image-outer img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.owl-carousel-testi-page .testimonial-block .inner-box .image-outer .image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.testimonial-block .inner-box .quote.quote-left {
+    left: 0px;
+    right: auto;
+}
+.testimonial-block .inner-box .quote {
+    position: absolute;
+    left: 0px;
+    top: 28px;
+    right: 0px;
+    font-size: 28px;
+    color: #50a684;
+}
+.owl-carousel-testi-page .testimonial-block .inner-box .text {
+    position: relative;
+    font-size: 22px;
+    color: #222222;
+    font-style: italic;
+    line-height: 1.5em;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+}
+.testimonial-block .inner-box .quote.quote-right {
+    right: 0px;
+    left: auto;
+}
+.testimonial-block .inner-box .quote {
+    position: absolute;
+    left: 0px;
+    top: 28px;
+    right: 0px;
+    font-size: 28px;
+    color: #50a684;
+}
+.testimonial-block .inner-box h3 {
+    position: relative;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 0;
+    line-height: 1.2em;
+    text-align: right;
+}
+.testimonial-block .inner-box .location {
+    position: relative;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 4px;
+    text-align: right;
+}
+.image img {
+    border-radius: 50%;
+}
+a.navbar-brand img {
+    width: 98%;
+}
+.menu--footer ul.menu a.is-active {
+    color: #fff;
+}
+.header2 nav.sticky {
+    top: 79px;
+    color: #fff;
+}
+.header2 nav.sticky .navbar-nav li a {
+    color: #fff !important;
+}
+.node--type-page #who-we-are{
+    background: #fff !important;
+}
+.node--type-page #who-we-are .title {
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#enquiry .contact-form input.custom-btn {
+    display: inline-block;
+    background-color: #007a53;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center !important;
+    font-weight: 400;
+    margin-right: 10px !important;
+    margin-top: 30px !important;
+    padding: 15px 36px;
+    font-size: 16px !important;
+    border-radius: 3px !important;
+    text-transform: uppercase !important;
+    position: relative;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+    border:0;
+} 
+div#edit-actions {
+    margin: 4px;
+}
+h2.title.comment-form__title {
+    font-size: 23px;
+    text-transform: capitalize;
+}
+.user-logged-in nav.sticky {
+    position: fixed ;
+    top: 50px !important;
+    left: 0;
+    z-index: 100 !important;
+    background: #fff;
+    -webkit-box-shadow: 0 3px 7px 0 rgba(0,0,0,.3);
+    -moz-box-shadow: 0 3px 7px 0 rgba(0,0,0,.3);
+    -ms-box-shadow: 0 3px 7px 0 rgba(0,0,0,.3);
+    -o-box-shadow: 0 3px 7px 0 rgba(0,0,0,.3);
+    box-shadow: 0 3px 7px 0 rgba(0,0,0,.3);
+}
+.careers-info .row .apply-btn .custom-btn {
+    padding: 10px 20px !important;
+    font-size: 14px;
+    position: relative;
+    left: 0%;
+}
+.plans-item .custom-btn {
+    padding: 7px 20px !important;
+}
+.col-md-6:nth-child(even) .plans-item .custom-btn {
+    background: 0 0;
+    border: 2px solid #da291c;
+    color: #333 !important;
+}
+.panel-heading span {
+    float: left;
+    top: 0;
+    padding: 3px 8px;
+    overflow: hidden;
+    margin-right: 13px;
+    color: #333;
+    border: 1px solid #333;
+    background: #fdfdfd;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 14px;
+}
+.navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    padding: 0;
+}
+.region.region-primary-menu {
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+}
+button.navbar-toggler.collapsed {
+    margin-top: 24px;
+}
+footer .footer-wedget .pd ul, footer .recent-post ul {
+    padding: 0px;
+    margin: 0px;
+}
+footer .footer-wedget.pd {
+   padding: 30px 15px 15px 15px;   
+}
+#vision-and-mission ul li span {
+    font-size: 13px;
+    color: #333;
+    overflow: hidden;
+}
+#blog .blog-grid .blog-list-item img {
+    padding-bottom:20px;
+}
+nav.pager {
+    margin: 0px auto;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+    border-color: #007a53;
+    box-shadow: none;
+    outline: 0 none;
+}
+.form-text, .form-email {
+    display: block;
+    margin-top: .25rem;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+.file {
+    padding-left: 0px;
+}
+.login-header {
+    font-size: 60px;
+    text-align: center;
+    color: #333333;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.login-form a {
+    color: #fff;
+}
+.login-header i {
+    color: #007a53;
+    font-size: 35px;
+    -webkit-animation: pulse 2s infinite;
+    -o-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+    transition: 1s ease;
+}
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+}
+}

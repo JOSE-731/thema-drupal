@@ -1,0 +1,21 @@
+<section id="who-we-are">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+          <div class="left-side">
+            <img src="{{ file_url(content.field_image['#items'].entity.uri.value) }}" alt="{{ content.field_image['#items'].alt }}" class="img-fluid">
+            <div class="overlay">
+              <a class="popup-youtube" href="{{content.field_video_url.0}}"><i class="fa fa-play"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-12 col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
+          <div class="caption">
+            <h3 class="title">{{content.field_title.0}}</h3>
+            {{content.field_body.0}}
+            <a href="{{ content.field_button[0]['#url']|render }}" class="custom-btn">{{ content.field_button[0]['#title']|render }}</a>
+          </div>  
+        </div>
+      </div>  
+    </div>
+  </section>

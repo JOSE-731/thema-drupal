@@ -1,0 +1,17 @@
+<div class="row">   
+  <div class="col-lg-4 col-md-5 col-sm-12">
+    <a href="{{fields.view_node.content}}"><img src="{{fields.field_image.content}}" class="img-fluid" title="blog" alt="blog"></a>
+  </div>
+  <div class="col-lg-8 col-md-7 col-sm-12">
+    <div class="blog-caption">
+      <a href="{{fields.view_node.content}}"><h3>{{fields.title.content}}</h3></a>
+      <ul>
+        <li><span><i class="fa fa-user"></i>By {{fields.uid.content}}</span></li>
+        <li><span><i class="fa fa-calendar-o"></i>{{fields.created.content}}</span></li>
+        <li><span><i class="fas fa-comments"></i>{{fields.comment_count.content}} Comments</span></li>
+      </ul>
+      <p>{{fields.body.content}}</p>
+      <a href="{{fields.view_node.content}}" class="link">Read More</a>
+    </div>
+  </div>
+</div>

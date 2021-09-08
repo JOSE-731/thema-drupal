@@ -1,0 +1,270 @@
+<?php
+use Drupal\Core\Url;
+use Drupal\file\Entity\File;
+
+function yg_startup_preprocess_page(&$variables) {
+
+  $variables['header_variation'] = theme_get_setting('header_variation');
+  $variables['header_address'] = theme_get_setting('header_address');
+  $variables['phone_num'] = theme_get_setting('phone_num');
+  $variables['facebook'] = theme_get_setting('facebook');
+  $variables['twitter'] = theme_get_setting('twitter');
+  $variables['linkedin'] = theme_get_setting('linkedin');
+  $variables['pinterest'] = theme_get_setting('pinterest');
+  $variables['website'] = theme_get_setting('website');
+  $variables['email'] = theme_get_setting('email');
+  $variables['footer_address'] = theme_get_setting('footer_address');
+  $variables['action_title'] = theme_get_setting('action_title');
+  $variables['action_sub_title'] = theme_get_setting('action_sub_title');
+  $variables['button_link'] = theme_get_setting('button_link');
+  $variables['button_text'] = theme_get_setting('button_text');
+}
+
+
+function yg_startup_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id = NULL) {
+  // Work-around for a core bug affecting admin themes. See issue #943212.
+  
+  #header links 
+  $form['header'] = [
+    '#type' => 'details',
+    '#title' => t('Header'),
+    '#weight' => -10,
+    '#group' => 'visibility',
+    '#open' => FALSE,
+  ];
+  $form['header']['header_variation'] = [
+    '#title' => 'Header', 
+    '#type' => 'select',
+    '#options' => array(
+      'header1' => 'Header 1',
+      'header2' => 'Header 2',
+    ),
+    '#default_value' => theme_get_setting('header_variation'),
+    '#description' => t('Please choose any one header'),
+  ];
+
+	$form['ygs_settings']['footer'] = array(
+	'#type' => 'details',
+	'#title' => t('Theme Settings'),
+	'#collapsible' => TRUE,
+	'#collapsed' => FALSE,
+	);
+
+	$form ['ygs_settings']['footer']['header_address'] = array(
+	'#type'          => 'textfield',
+	'#title'         => t('Header Address'),
+	'#default_value' => theme_get_setting('header_address'),
+	'#description'   => t("Place this text in the widget spot on your site."),
+	);
+
+	$form ['ygs_settings']['footer']['phone_num'] = array(
+	'#type'          => 'textfield',
+	'#title'         => t('Phone num'),
+	'#default_value' => theme_get_setting('phone_num'),
+	'#description'   => t("Place this text in the widget spot on your site."),
+	);
+
+  $form ['ygs_settings']['footer']['facebook'] = array(
+  '#type'          => 'textfield',
+  '#title'         => t('facebook'),
+  '#default_value' => theme_get_setting('facebook'),
+  '#description'   => t("Place this text in the widget spot on your site."),
+  );
+
+  $form ['ygs_settings']['footer']['twitter'] = array(
+  '#type'          => 'textfield',
+  '#title'         => t('Twitter'),
+  '#default_value' => theme_get_setting('twitter'),
+  '#description'   => t("Place this text in the widget spot on your site."),
+  );
+
+  $form ['ygs_settings']['footer']['linkedin'] = array(
+  '#type'          => 'textfield',
+  '#title'         => t('Linkedin'),
+  '#default_value' => theme_get_setting('linkedin'),
+  '#description'   => t("Place this text in the widget spot on your site."),
+  );
+
+  $form ['ygs_settings']['footer']['pinterest'] = array(
+  '#type'          => 'textfield',
+  '#title'         => t('Pinterest'),
+  '#default_value' => theme_get_setting('pinterest'),
+  '#description'   => t("Place this text in the widget spot on your site."),
+  );
+
+  $form ['ygs_settings']['footer']['website'] = array(
+  '#type'          => 'textfield',
+  '#title'         => t('Website'),
+  '#default_value' => theme_get_setting('website'),
+  '#description'   => t("Place this text in the widget spot on your site."),
+  );
+
+  $form ['ygs_settings']['footer']['email'] = array(
+  '#type'          => 'textfield',
+  '#title'         => t('Email'),
+  '#default_value' => theme_get_setting('email'),
+  '#description'   => t("Place this text in the widget spot on your site."),
+  );
+
+  $form ['ygs_settings']['footer']['footer_address'] = array(
+  '#type'          => 'textarea',
+  '#title'         => t('Footer address'),
+  '#default_value' => theme_get_setting('footer_address'),
+  '#description'   => t("Place this text in the widget spot on your site."),
+  );
+  $form ['ygs_settings']['footer']['action_title'] = array(
+  '#type'          => 'textarea',
+  '#title'         => t('Call to action title'),
+  '#default_value' => theme_get_setting('action_title'),
+  '#description'   => t("Place this text in the widget spot on your site."),
+  );
+  $form ['ygs_settings']['footer']['action_sub_title'] = array(
+  '#type'          => 'textfield',
+  '#title'         => t('Call to action sub title'),
+  '#default_value' => theme_get_setting('action_sub_title'),
+  '#description'   => t("Place this text in the widget spot on your site."),
+  );
+  $form ['ygs_settings']['footer']['button_link'] = array(
+  '#type'          => 'textfield',
+  '#title'         => t('Button link'),
+  '#default_value' => theme_get_setting('button_link'),
+  '#description'   => t("Place this text in the widget spot on your site."),
+  );
+  $form ['ygs_settings']['footer']['button_text'] = array(
+  '#type'          => 'textfield',
+  '#title'         => t('Button text'),
+  '#default_value' => theme_get_setting('button_text'),
+  '#description'   => t("Place this text in the widget spot on your site."),
+  );
+  $form['maintenance'] = [
+    '#type' => 'details',
+    '#title' => t('Maintenance Setting'),
+    '#weight' => -6,
+    '#group' => 'visibility',
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  ];
+  $form['maintenance']['bg-image1'] = [
+    '#type' => 'managed_file',
+    '#title'    => t('Background Image'),
+    '#default_value' => theme_get_setting('bg-image1'),
+    '#upload_location' => 'public://',
+    '#description' => t('Choose your background image'),
+  ];
+  $form['maintenance']['maintance_mode_title'] = [
+    '#type' => 'textfield',
+    '#title' => t('Title'),
+    '#description' => t('Please enter the maintance_mode title'),
+    '#default_value' => theme_get_setting('maintance_mode_title'),
+  ];
+  $form['maintenance']['maintance_mode_description'] = [
+    '#type' => 'textarea',
+    '#title' => t('Description'),
+    '#description' => t('Please enter the maintance_mode description'),
+    '#default_value' => theme_get_setting('maintance_mode_description'),
+  ];
+  $form['maintenance']['redirect_url'] = [
+    '#type' => 'url',
+    '#title' => t('Contact Info'),
+    '#description' => t('Please enter the redirect url'),
+    '#default_value' => theme_get_setting('redirect_url'),
+  ];
+  $form['maintenance']['date'] = [
+    '#type' => 'date',
+    '#title' => t('Launch Date'),
+    '#description' => t('Please enter the date'),
+    '#default_value' => theme_get_setting('date'),
+    ];
+  $form['maintenance']['custom_message'] = [
+    '#type' => 'textfield',
+    '#title' => t('Date Expired custom message'),
+    '#description' => t('Please enter the yg_startup title'),
+    '#default_value' => theme_get_setting('custom_message'),
+  ];
+  $form['#submit'][] = 'yg_startup_form_submit';
+}
+
+
+
+function yg_startup_form_submit(&$form, $form_state) {
+  // maintenance-mode
+  $fid1 = $form_state->getValue('bg-image1');
+  if (array_key_exists(0,$fid1)){
+    $file1 = File::load($fid1[0]);
+    if (!empty($file1)) {
+      $file1->setPermanent();
+      $file1->save();
+      $file_usage1 = \Drupal::service('file.usage');
+      $file_usage1->add($file1, 'yg_startup', 'themes', 1);
+    }
+  }
+  
+}
+
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function yg_startup_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  // Get Request Object.
+  $request = \Drupal::request();
+
+  // If there is HTTP Exception..
+  if ($exception = $request->attributes->get('exception')) {
+    // Get the status code.
+    $status_code = $exception->getStatusCode();
+    if (in_array($status_code, array(401, 403, 404))) {
+      $suggestions[] = 'page__' . $status_code;
+    }
+  }
+}
+
+/**
+* Implements hook_theme().
+*/
+
+function yg_startup_theme(&$existing, $type, $theme, $path) {
+  $hooks = array();
+  $hooks['user_login_form'] = array(
+      'render element' => 'form',
+      'template' => 'user-login-form',
+  );
+  $hooks['user_register_form'] = array(
+      'render element' => 'form',
+      'template' => 'user-register-form',
+  );
+  return $hooks;
+}
+
+function yg_startup_preprocess_node(&$variables) {
+  // Note: you'll probably want this only for certain content types.
+  if ($variables['node']->getType() == 'blog') {
+    $variables['comment_count'] = $variables['node']->get('field_comments')->comment_count;
+  }
+}
+
+
+function yg_startup_preprocess_maintenance_page(&$variables) {
+  $variables['#attached'] = [
+    'drupalSettings' => [
+      'custom_date' => $variables['custom_date'] = theme_get_setting('date'),
+      'custom_message_dateExpired' => $variables['custom_message_dateExpired'] = theme_get_setting('custom_message'),
+    ],
+  ];
+  $variables['maintance_mode_title'] = theme_get_setting('maintance_mode_title');
+  $variables['maintance_mode_description'] = theme_get_setting('maintance_mode_description');
+  $variables['redirect_url'] = theme_get_setting('redirect_url');
+
+  // banner-image
+  $bg_image_url1 = array();
+  $path1 = array();
+  $fid1 = theme_get_setting('bg-image1' , 'yg_startup')[0];
+  for ($i = 1; $i <= $fid1; $i++) {
+  if (!empty($fid1)) {
+      $file1 = File::load($fid1);
+      $uri1 = $file1->url();
+      $path1 = file_create_url($uri1);
+    }
+  $variables['bg_image_url1'] = $path1;
+  }
+}
